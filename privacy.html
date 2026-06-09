@@ -21,10 +21,10 @@
 
 <div class="page">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 2 June 2026</p>
+  <p class="updated">Last updated: 9 June 2026</p>
 
   <div class="callout">
-    <p><strong>The short version:</strong> FeelLens is local-first. Everything you log stays on your device. We have no account system, no server that receives your entries, and we do not sell or share your data with anyone.</p>
+    <p><strong>The short version:</strong> FeelLens is local-first. Everything you log stays on your device. We have no account system and no server that receives your entries. The one exception is the optional AI weekly summary, which is off by default — only if you turn it on does FeelLens send a short list of aggregate weekly counts (never your notes, tags, times, or individual entries) to OpenAI to generate the wording. We never sell or share your data.</p>
   </div>
 
   <p>FeelLens helps you notice how you feel and what tends to help over time. We designed it to be private by default. This policy explains, in plain language, what happens to your data.</p>
@@ -38,6 +38,11 @@
     <li><strong>Restore</strong> reads a backup file you select and imports it back into the app.</li>
   </ul>
   <p>We never trigger any of these automatically.</p>
+
+  <h2>AI weekly summary (optional, off by default)</h2>
+  <p>FeelLens can write a short, plain-language summary of your past week. This feature is <strong>off by default</strong>. When it is off, the summary is generated entirely on your device and nothing leaves it.</p>
+  <p>If you turn it on in Settings, FeelLens sends a small set of <strong>aggregate counts</strong> from your last 7 days to <strong>OpenAI</strong> (model gpt-4o-mini) via its API, which generates the wording. Requests are relayed through a FeelLens-operated proxy that attaches the API credential and forwards only those counts. What is sent is limited to: how many states you logged and on how many days; which built-in state you logged most and how often; an action label you typed and how often the state improved after it; which two states you logged on the same day; whether poor sleep, a skipped meal, or high stress was noted; and how many followed-up states improved.</p>
+  <p>What is <strong>never</strong> sent: your notes, tags, the text of entries, dates and times, individual entries, and your name, account, email, or device identifiers. OpenAI does not use this data to train its models, and we do not sell or share it. You can see exactly what is sent, and turn the feature off, in Settings ▸ AI summary ▸ "What gets sent." For details on OpenAI's handling of API data, see OpenAI's privacy policy at <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</p>
 
   <h2>Diagnostics (optional, off by default)</h2>
   <p>FeelLens includes an optional diagnostics setting to help us find and fix crashes. It is turned off by default. If you turn it on, only technical error information may be collected — never your entries, notes, or any health-related content. You can turn it off again at any time in Settings.</p>
