@@ -21,7 +21,7 @@
 
 <div class="page">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 9 June 2026</p>
+  <p class="updated">Last updated: 11 June 2026</p>
 
   <div class="callout">
     <p><strong>The short version:</strong> FeelLens is local-first. Everything you log stays on your device. We have no account system and no server that receives your entries. The one exception is the optional AI weekly summary, which is off by default — only if you turn it on does FeelLens send a short list of aggregate weekly counts (never your notes, tags, times, or individual entries) to OpenAI to generate the wording. We never sell or share your data.</p>
@@ -41,8 +41,19 @@
 
   <h2>AI weekly summary (optional, off by default)</h2>
   <p>FeelLens can write a short, plain-language summary of your past week. This feature is <strong>off by default</strong>. When it is off, the summary is generated entirely on your device and nothing leaves it.</p>
-  <p>If you turn it on in Settings, FeelLens sends a small set of <strong>aggregate counts</strong> from your last 7 days to <strong>OpenAI</strong> (model gpt-4o-mini) via its API, which generates the wording. Requests are relayed through a FeelLens-operated proxy that attaches the API credential and forwards only those counts. What is sent is limited to: how many states you logged and on how many days; which built-in state you logged most and how often; an action label you typed and how often the state improved after it; which two states you logged on the same day; whether poor sleep, a skipped meal, or high stress was noted; and how many followed-up states improved.</p>
-  <p>What is <strong>never</strong> sent: your notes, tags, the text of entries, dates and times, individual entries, and your name, account, email, or device identifiers. OpenAI does not use this data to train its models, and we do not sell or share it. You can see exactly what is sent, and turn the feature off, in Settings ▸ AI summary ▸ "What gets sent." For details on OpenAI's handling of API data, see OpenAI's privacy policy at <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</p>
+  <p>The feature only activates after you give <strong>explicit permission</strong>: when you switch it on in Settings, the app shows a consent prompt that states what will be sent and to whom, and nothing is sent unless you tap Allow. You can withdraw consent at any time by switching the feature off.</p>
+  <p>If you allow it, FeelLens sends a small set of <strong>aggregate counts</strong> from your last 7 days to <strong>OpenAI</strong> (model gpt-4o-mini) via its API, which generates the wording. Requests are relayed through a FeelLens-operated proxy that attaches the API credential and forwards only those counts. What is sent is limited to: how many states you logged and on how many days; which built-in state you logged most and how often; an action label you typed and how often the state improved after it; which two states you logged on the same day; whether poor sleep, a skipped meal, or high stress was noted; and how many followed-up states improved.</p>
+  <p>What is <strong>never</strong> sent: your notes, tags, the text of entries, dates and times, individual entries, and your name, account, email, or device identifiers. We do not sell or share this data. You can see exactly what is sent, and turn the feature off, in Settings ▸ AI summary ▸ "What gets sent."</p>
+  <p>OpenAI processes this data as a service provider under its API terms, which provide protections for your data that are the same as or equal to this policy: API data is not used to train OpenAI's models, is retained only for a limited abuse-monitoring period, and is not sold or shared. For details, see OpenAI's API data-usage commitments at <a href="https://openai.com/policies/api-data-usage-policies">openai.com/policies/api-data-usage-policies</a> and its privacy policy at <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a>.</p>
+
+  <h2>Cloud sync (optional, iOS)</h2>
+  <p>If you use "Sync now" on iOS, a copy of your entries is written to your <strong>private iCloud container</strong> so your own devices can stay in sync. This data is stored in your personal iCloud account under Apple's terms; we operate no sync server and cannot read it. Sync only runs when you tap it.</p>
+
+  <h2>Health import (optional, off by default)</h2>
+  <p>If you enable the Health toggle, FeelLens reads <strong>last night's sleep duration</strong> (read-only) from Apple Health / Health Connect to pre-fill the coarse sleep level on a new entry. This value is processed on your device only. Health data is never written back, never included in the AI summary request, never used for advertising, and never shared with any third party.</p>
+
+  <h2>Subscriptions</h2>
+  <p>Payments for FeelLens Premium are processed by Apple (App Store). To check whether your subscription is active, the app uses <strong>RevenueCat</strong>, a subscription-management service. RevenueCat receives a random, app-generated identifier and App Store receipt information — never your entries, notes, health data, name, or email. RevenueCat processes this data as our service provider with protections equal to this policy and does not sell it; see <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
 
   <h2>Diagnostics (optional, off by default)</h2>
   <p>FeelLens includes an optional diagnostics setting to help us find and fix crashes. It is turned off by default. If you turn it on, only technical error information may be collected — never your entries, notes, or any health-related content. You can turn it off again at any time in Settings.</p>
